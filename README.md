@@ -1,4 +1,2 @@
 # ccp_starter_code
-Starter Code for your CCP 
-
-Test
+Michael Hess please forgive me for my awful commit messages.

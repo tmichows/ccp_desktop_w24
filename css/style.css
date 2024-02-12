@@ -156,16 +156,24 @@ h3+ol li {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
-@media (prefers-reduced-motion) {
-    .header-gif {
-        display: none;
-    }
-}
-
 .travel-preview-pictures{
     display: grid;
     border: 5px double #04BF8A;
     justify-content: center;
     align-items: center;
     grid-template-columns: 1fr 1fr;
+}
+
+@media (prefers-reduced-motion) {
+    .header-gif {
+        display: none;
+    }
+}
+
+@media (max-width: 1000)
+{
+    .travel-gallery{
+        display: grid;
+        width: 100%;
+    }
 }

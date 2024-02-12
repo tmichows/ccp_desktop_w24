@@ -28,7 +28,6 @@ nav {
 nav ul li {
     background-color: #025940;
     padding: 20px;
-    font-weight: bolder;
     font-size: 30px;
     display: flex;
 }
@@ -44,7 +43,7 @@ a:link {
     background-color: #03A64A;
     text-transform: uppercase;
     text-align: center;
-    color: #ffffff;
+    font-weight: bolder;
 }
 
 h1 {

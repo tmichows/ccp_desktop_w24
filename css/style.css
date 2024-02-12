@@ -80,10 +80,29 @@ p {
 }
 
 img {
-    width: 75%;
+    width: 55%;
     margin-left: auto;
     margin-right: auto;
     display: block;
+}
+
+video{
+    width: 55%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+footer {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 255, 1) 25%, rgba(0, 102, 255, 1) 70%, rgba(0, 0, 0, 1) 100%);
+    border: 5px solid #ffffff;
+}
+
+footer p {
+    font-size: 20px;
+    text-align: right;
+    padding: 15px 15px 15px 0px;
 }
 
 .info_and_picture {
@@ -104,35 +123,14 @@ img {
 
 .image_and_video_gallery {
     display: grid;
-    border: 5px dashed #04BF8A;
+    border: 5px double #04BF8A;
     border-radius: 30pt;
     text-align: center;
 }
 
-
-footer {
-    background: rgb(0, 0, 0);
-    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 255, 1) 25%, rgba(0, 102, 255, 1) 70%, rgba(0, 0, 0, 1) 100%);
-    border: 5px solid #ffffff;
-}
-
-footer p {
-    font-size: 20px;
-    text-align: right;
-    padding: 15px 15px 15px 0px;
-}
-
-.pet_info_and_picture {
-    display: grid;
-    border: 5px double #04BF8A;
-    justify-content: center;
-    grid-template-columns: 1fr 1fr 1fr;
-    margin: 25pt;
-}
-
 .gallery {
     display: grid;
-    border: 5px double #04BF8A;
+    border: 5px double #ffffff;
     justify-content: center;
     align-items: center;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -155,19 +153,9 @@ h3+ol li {
     padding: 15pt;
 }
 
-.travel-gallery {
-    display: grid;
-    border: 5px double #04BF8A;
-    justify-content: center;
-    align-items: center;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    padding: 50pt;
-    
-}
-
 .travel-preview-pictures{
     display: grid;
-    border: 5px double #04BF8A;
+    border: 5px double #ffff;
     justify-content: center;
     align-items: center;
     grid-template-columns: 1fr 1fr;
@@ -179,19 +167,14 @@ h3+ol li {
     }
 }
 
-@media (max-width: 1000)
-{
-    .travel-gallery{
-        display: grid;
-        width: 100%;
-    }
-}
-
-
 .recipe-preview{
     display: grid;
-    border: 5px double #04BF8A;
+    border: 5px double #ffffff;
     justify-content: center;
     align-items: center;
     padding: 50pt;
+}
+
+h2 + img {
+    border: 3px double #ffffff;
 }

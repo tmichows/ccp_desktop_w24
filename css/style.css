@@ -64,9 +64,9 @@ h2 {
     padding: 15px;
 }
 
-h3{
+h3 {
     text-align: left;
-    font-size:25px;
+    font-size: 25px;
     padding: 15px;
 }
 
@@ -85,15 +85,15 @@ p {
     margin: 25pt;
 }
 
-.set_info_and_picture ul li{
+.set_info_and_picture ul li {
     font-size: 15pt;
     text-transform: capitalize;
     line-height: 2;
     list-style: outside;
 }
 
- 
-.image_and_video_gallery{
+
+.image_and_video_gallery {
     display: grid;
     border: 5px dashed #04BF8A;
     border-radius: 30pt;
@@ -101,10 +101,10 @@ p {
     grid-template-rows: 1fr 1fr 1fr 1fr;
     justify-content: center;
     align-content: center;
-    align-items:stretch;
+    align-items: stretch;
 }
 
-img{
+img {
     width: 1f;
     margin: 15pt;
 }

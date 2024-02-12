@@ -89,8 +89,8 @@ p {
 }
 
 img {
-    width: 1f;
-    margin: 15pt;
+    width: 1fr;
+
 }
 
 .skip a {

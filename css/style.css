@@ -161,6 +161,10 @@ h3+ol li {
     grid-template-columns: 1fr 1fr;
 }
 
+.travel-gallery{
+    text-align: center;
+}
+
 @media (prefers-reduced-motion) {
     .header-gif {
         display: none;
@@ -211,14 +215,6 @@ h2 + img {
     .pet img{
         width: 100%;
     }
-
-    .gallery {
-        display: grid;
-        border: 5px double #ffffff;
-        justify-content: center;
-        align-items: center;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    }
     
     p{
         opacity: 0;
@@ -246,4 +242,5 @@ h2 + img {
         background-color: black;
         font-size: 25px;
     }
+
 }

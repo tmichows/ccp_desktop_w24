@@ -29,14 +29,17 @@ nav ul li {
     background-color: #025940;
     padding: 20px;
     font-size: 30px;
-    display: flex;
+    
 }
 
-a:hover,
 a:visited,
 a:link {
     color: #ffffff;
     text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
 }
 
 .active {
@@ -184,8 +187,11 @@ h2 + img {
 
 @media screen and (min-width: 750px) {
 
-    nav ul li {
-        display: inline-block;
+    nav ul{
+        display: flex;
+        flex-direction: row;
+        justify-content:space-between;
+        background-color: #025940;
     }
 
     .info_and_picture{

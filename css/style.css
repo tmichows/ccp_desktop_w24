@@ -177,3 +177,74 @@ h3+ol li {
 h2 + img {
     border: 3px double #ffffff;
 }
+
+@media screen and (min-width: 800px) {
+
+    nav ul li {
+        display: inline-block;
+    }
+
+    .info_and_picture{
+        grid-template-columns: 1fr;
+    }
+
+    .info_and_picture img{
+        width: 100%;
+    }
+    
+    .info_and_picture ul li {
+        list-style: inside;
+    }
+    
+    .recipe-preview img{
+        width: 100%;
+    }
+
+    .travel-preview-pictures{
+        grid-template-columns: 1fr;
+    }
+
+    .travel-preview-pictures img{
+        width: 100%;
+    }
+
+    .pet img{
+        width: 100%;
+    }
+
+    .gallery {
+        display: grid;
+        border: 5px double #ffffff;
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+    p{
+        opacity: 0;
+        overflow: hidden;
+    }
+
+    p:hover{
+        opacity: 1;
+        transition: 0.3s;
+    }
+
+    ul li, ol li{
+        opacity: 0;
+        overflow: hidden;
+    }
+
+    nav ul li{
+        opacity: 1;
+    }
+
+    ul li:hover{
+        opacity: 1;
+        transition: 0.3s;
+    }
+
+    ol li:hover{
+        opacity: 1;
+        transition: 0.3s;
+    }
+}

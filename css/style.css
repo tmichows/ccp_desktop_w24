@@ -219,9 +219,9 @@ h2 + img {
         align-items: center;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     }
+    
     p{
         opacity: 0;
-        overflow: hidden;
     }
 
     p:hover{
@@ -229,21 +229,15 @@ h2 + img {
         transition: 0.3s;
     }
 
-    ul li, ol li{
+    ul, ol {
         opacity: 0;
-        overflow: hidden;
     }
 
-    nav ul li{
+    nav ul{
         opacity: 1;
     }
 
-    ul li:hover{
-        opacity: 1;
-        transition: 0.3s;
-    }
-
-    ol li:hover{
+    ul:hover, ol:hover {
         opacity: 1;
         transition: 0.3s;
     }

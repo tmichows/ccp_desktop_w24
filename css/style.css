@@ -178,7 +178,7 @@ h2 + img {
     border: 3px double #ffffff;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 750px) {
 
     nav ul li {
         display: inline-block;
@@ -240,5 +240,10 @@ h2 + img {
     ul:hover, ol:hover {
         opacity: 1;
         transition: 0.3s;
+    }
+
+    .skip a:focus {
+        background-color: black;
+        font-size: 25px;
     }
 }

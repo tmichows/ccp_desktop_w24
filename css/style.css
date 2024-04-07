@@ -136,7 +136,7 @@ footer p {
     border: 5px double #ffffff;
     justify-content: center;
     align-items: center;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
 }
 
 h3+ul li {
@@ -165,7 +165,14 @@ h3+ol li {
 }
 
 .travel-gallery{
+    display: grid;
     text-align: center;
+    grid-template-columns: 1fr;
+}
+
+.recipe-grid{
+    display: grid;
+    grid-template-columns: 1fr;
 }
 
 @media (prefers-reduced-motion) {
@@ -194,6 +201,7 @@ h2 + img {
         background-color: #025940;
     }
 
+
     .info_and_picture{
         grid-template-columns: 1fr;
     }
@@ -201,7 +209,10 @@ h2 + img {
     .info_and_picture img{
         width: 100%;
     }
-    
+
+    .image_and_video_gallery{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
     .info_and_picture ul li {
         list-style: inside;
     }
@@ -217,7 +228,9 @@ h2 + img {
     .travel-preview-pictures img{
         width: 100%;
     }
-
+    .travel-gallery{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
     .pet img{
         width: 100%;
     }
@@ -226,14 +239,14 @@ h2 + img {
         opacity: 0;
     }
 
-    p:hover{
-        opacity: 1;
-        transition: 0.3s;
-    }
-
     ul, ol {
         opacity: 0;
     }
+
+    /* p:hover{
+        opacity: 1;
+        transition: 0.3s;
+    } */
 
     nav ul{
         opacity: 1;
@@ -249,4 +262,62 @@ h2 + img {
         font-size: 25px;
     }
 
+    .gallery{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .recipe-grid{
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+}
+
+@media screen and (min-width: 1024px)
+{
+    nav ul{
+        display: flex;
+        flex-direction: row;
+        justify-content:space-around;
+        background-color: #025940;
+    }
+
+
+    .info_and_picture{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .info_and_picture img, .pet img, .recipe-preview img, .travel-preview-pictures img{
+        width: 50%;
+    }
+
+    .image_and_video_gallery{
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+    
+    .gallery{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .recipe-preview{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .travel-preview-pictures{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .travel-gallery{
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    .recipe-grid{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .skip a:focus {
+        background-color: black;
+        font-size: 25px;
+    }
 }
